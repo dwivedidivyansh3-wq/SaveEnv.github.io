@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Environment | BBA Project</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { line-height: 1.6; color: #333; }
+    header {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    nav h1 { font-size: 24px; }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover { text-decoration: underline; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h2 { font-size: 48px; margin-bottom: 15px; }
+    .hero p { font-size: 20px; margin-bottom: 20px; }
+    .btn {
+      display: inline-block;
+      background: #2e7d32;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover { background: #1b5e20; }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2e7d32;
+      font-size: 32px;
+    }
+    .about, .importance { text-align: justify; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 { color: #2e7d32; margin-bottom: 10px; }
+
+    .stats {
+      background: #e8f5e9;
+      text-align: center;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .stat {
+      padding: 20px;
+    }
+    .stat h3 { font-size: 36px; color: #1b5e20; }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form label { display: block; margin-bottom: 5px; font-weight: bold; }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      .hero h2 { font-size: 34px; }
+      .hero p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Save Environment</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#issues">Issues</a></li>
+      <li><a href="#importance">Importance</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Protect Nature, Protect Future</h2>
+    <p>Together we can save our planet for the next generations</p>
+    <a href="#about" class="btn">Learn More</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About the Project</h2>
+  <p>
+    This website is developed as a <strong>BBA 2nd Year academic project</strong> to spread awareness about environmental protection. 
+    Rapid industrialization, urbanization, and overuse of natural resources have caused serious environmental problems such as pollution, climate change, and deforestation. 
+    The aim of this project is to educate people about these issues and encourage sustainable practices in daily life.
+  </p>
+</section>
+
+<section id="issues">
+  <h2>Major Environmental Issues</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Air Pollution</h3>
+      <p>Harmful gases from vehicles and industries cause health problems and global warming.</p>
+    </div>
+    <div class="card">
+      <h3>Water Pollution</h3>
+      <p>Industrial waste and plastic contaminate rivers, oceans, and drinking water.</p>
+    </div>
+    <div class="card">
+      <h3>Deforestation</h3>
+      <p>Cutting trees leads to loss of biodiversity and imbalance in the ecosystem.</p>
+    </div>
+    <div class="card">
+      <h3>Climate Change</h3>
+      <p>Rising temperatures and extreme weather conditions threaten life on Earth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="importance" class="importance">
+  <h2>Why Saving Environment is Important</h2>
+  <p>
+    A healthy environment is essential for human survival and economic growth. 
+    It provides clean air, water, food, and resources. Protecting the environment helps in maintaining ecological balance, 
+    reducing health risks, and ensuring sustainable development. Businesses and governments must adopt eco-friendly policies 
+    to secure a better future.
+  </p>
+</section>
+
+<section class="stats">
+  <h2>Environmental Facts</h2>
+  <div class="stats-grid">
+    <div class="stat">
+      <h3>70%</h3>
+      <p>Fresh water used by agriculture</p>
+    </div>
+    <div class="stat">
+      <h3>8M+</h3>
+      <p>Tons of plastic enter oceans yearly</p>
+    </div>
+    <div class="stat">
+      <h3>1.5°C</h3>
+      <p>Critical global temperature limit</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="return submitForm()">
+    <label>Name</label>
+    <input type="text" required />
+
+    <label>Email</label>
+    <input type="email" required />
+
+    <label>Message</label>
+    <textarea rows="4" required></textarea>
+
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Save Environment | BBA 2nd Year Project</p>
+</footer>
+
+<script>
+  function submitForm() {
+    alert('Thank you for contacting us!');
+    return false;
+  }
+</script>
+
+</body>
+</html>

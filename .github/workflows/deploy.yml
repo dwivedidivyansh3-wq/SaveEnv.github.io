@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npx vite build
+      - name: Add .nojekyll
+        run: touch dist/public/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

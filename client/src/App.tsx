@@ -5,9 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
-
-// HashRouter implementation for GitHub Pages to avoid 404s on refresh
-// and simplify base path handling
 import { useHashLocation } from "wouter/use-hash-location";
 
 function AppRouter() {
@@ -24,7 +21,6 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        {/* Use HashRouter for GitHub Pages compatibility */}
         <Router hook={useHashLocation}>
           <AppRouter />
         </Router>
